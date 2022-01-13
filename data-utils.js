@@ -1,3 +1,4 @@
+import { displayFriends } from 'app.js';
 export function addFriend(name, friendData) {
     const newFriend = {
         name: name || `Friend #${Math.floor(Math.random() * 1000)}`,

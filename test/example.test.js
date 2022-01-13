@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-escape */
 // IMPORT MODULES under test here:
 import { renderMushroom } from '../render-utils.js';
 
