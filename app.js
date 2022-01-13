@@ -1,6 +1,6 @@
 // import functions and grab DOM elements
 import { renderMushroom, renderFriend } from './render-utils.js';
-import { addFriend, findFriendByName } from './data-utils.js';
+import { findFriendByName } from './data-utils.js';
 
 const friendsEl = document.querySelector('.friends');
 const friendInputEl = document.getElementById('friend-input');
@@ -52,7 +52,7 @@ addFriendButton.addEventListener('click', () => {
 
 addMushroomButton.addEventListener('click', () => {
     if (Math.random() > .5) {
-        alert('shroom ahoy!');
+        alert('you found a mushroom!');
 
         mushroomCount++;
         displayMushrooms();
@@ -106,19 +106,6 @@ function displayMushrooms() {
     }
 }
 
-
-
-
-addMushroomButton.addEventListener('click', () => {
-    if (Math.random() > .5) {
-        alert('found a mushroom!');
-
-        mushroomCount++;
-        displayMushrooms();
-    } else {
-        alert('no luck!');
-    }
-});
 
 displayFriends();
 displayMushrooms();
